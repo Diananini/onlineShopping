@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE taglib
+  PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN"
+  "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>1.2</jsp-version>
+	<short-name>linl</short-name>
+    <uri>/copyright-tags</uri>
+	
+	<tag>
+		<name>copyright</name>
+		<!-- 自定义标签的实现类路径 -->
+		<tag-class>com.eshore.tag.CopyRightTag</tag-class>
+		<!-- 正文内容类型  没有正文内容用empty表示 -->
+		<body-content>empty</body-content>
+		<!-- 自定义标签的功能描述 -->
+		<description>自定义版权</description>
+		<!-- 添加attribute属性 -->
+		<attribute>
+		   <name>user</name>
+		   <required>true</required>
+		   <rtexprvalue>true</rtexprvalue>
+		   <type>java.lang.String</type>
+		   <description>版权拥有者</description>
+		</attribute>
+		 <attribute>
+		   <name>startY</name>
+		   <required>true</required>
+		   <rtexprvalue>true</rtexprvalue>
+		   <type>java.lang.String</type>
+		   <description>开始月份</description>
+		</attribute>
+	</tag>
+	
+</taglib>
